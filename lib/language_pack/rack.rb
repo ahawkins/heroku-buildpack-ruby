@@ -31,6 +31,9 @@ class LanguagePack::Rack < LanguagePack::Ruby
     })
   end
 
+  def create_database_yml
+    # nothing
+  end
 private
 
   # sets up the profile.d script for this buildpack
