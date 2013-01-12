@@ -7,7 +7,6 @@ class LanguagePack::Rack < LanguagePack::Ruby
   # detects if this is a valid Rack app by seeing if "config.ru" exists
   # @return [Boolean] true if it's a Rack app
   def self.use?
-    log File.exists?("config.ru")
     super && File.exist?("config.ru")
   end
 
